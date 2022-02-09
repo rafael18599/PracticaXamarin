@@ -10,7 +10,7 @@ namespace DemoProyectoCrud
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Vistas.V_Principal());
         }
 
         protected override void OnStart()

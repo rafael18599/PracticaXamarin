@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="DemoProyectoCrud.Vistas.V_Principal"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="INICIO - AGENDA">
+    <StackLayout BackgroundColor="White">
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="white" />
+                    <GradientStop Offset="1" Color="CadetBlue" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <Label Text="¡ App de Prueba - Agenda !"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="Black"
+                FontSize="30"
+                Margin="0,10,0,10"
+                FontAttributes="Bold"/>
+
+        <StackLayout >
+            <Label Text="Nombre: "
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                Margin="10,10,0,10"/>
+            <Entry 
+                   x:Name="txtNombre"
+                   TextColor="Black"
+                   Margin="10,0,0,10"
+                   MaxLength="15">
+            </Entry>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    x:Name="btnBuscar"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Buscar Contacto"
+                    Grid.Row="0" Grid.Column="0"
+                    BackgroundColor="#09C68A"
+                    >
+                </Button>
+                <Button
+                    x:Name="btnRegistrar"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Center"
+                    Text="Registrar Contacto"
+                    Grid.Row="0" Grid.Column="1"
+                    BackgroundColor="#09C68A"
+                    >
+                </Button>
+                
+            </Grid>
+        </StackLayout>
+       
+    </StackLayout>
+</ContentPage>
