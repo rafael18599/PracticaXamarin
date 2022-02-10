@@ -4,23 +4,62 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="DemoProyectoCrud.Vistas.V_Registro">
-    <ContentPage.Content>
-        <StackLayout Margin="5"
-                     BackgroundColor="LightBlue">
+             x:Class="DemoProyectoCrud.Vistas.V_Registro"
+             Title="Registrar Nuevo Contacto">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="white" />
+                    <GradientStop Offset="1" Color="CadetBlue" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+        
+        <StackLayout Margin="5" VerticalOptions="Center" TranslationY="100">
             <Label Text="Registro de Contactos"
                    HorizontalOptions="CenterAndExpand"
-                   BackgroundColor="WhiteSmoke"/>
-            <Entry Placeholder="Introduce el nombre"
-                   x:Name="txtNombre"/>
-            <Entry Placeholder="Introduce los apellidos"
+                   FontSize="30"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,50"/>
+            <Label Text="Nombre: "
+                   VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                Margin="5,0,0,10"/>
+            <Entry 
+                   x:Name="txtNombre"
+                   TextColor="Black"/>
+            <Label Text="Apellido: "
+                   VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                Margin="5,0,0,10"/>
+            <Entry 
                    Keyboard="Text"
-                   x:Name="txtApellidos"/>
-            <Entry Placeholder="Introduce el telefono"
-                   x:Name="txtTelefono"/>
+                   x:Name="txtApellidos"
+                   TextColor="Black"/>
+            <Label Text="Teléfono: "
+                   VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                Margin="5,0,0,10"/>
+            <Entry 
+                Keyboard="Numeric"
+                   x:Name="txtTelefono"
+                   TextColor="Black"/>
             <Button Text="Guardar"
                     x:Name="btnGuardar"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="#09C68A"/>
         </StackLayout>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>

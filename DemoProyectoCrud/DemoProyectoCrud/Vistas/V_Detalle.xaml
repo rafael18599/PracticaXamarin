@@ -4,26 +4,31 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="DemoProyectoCrud.Vistas.V_Detalle">
-    <ContentPage.Content>
-        
-        <StackLayout Margin="5"
-                     BackgroundColor="LightBlue">
-            
-            <StackLayout.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <LinearGradientBrush.GradientStops>
-                        <GradientStop Offset="0" Color="white" />
-                        <GradientStop Offset="1" Color="CadetBlue" />
-                    </LinearGradientBrush.GradientStops>
-                </LinearGradientBrush>
-            </StackLayout.Background>
-            
+             x:Class="DemoProyectoCrud.Vistas.V_Detalle"
+             Title="Datos del Contacto">
+
+    <StackLayout >
+
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="white" />
+                    <GradientStop Offset="1" Color="CadetBlue" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <StackLayout TranslationY="150">
             <Label Text="Datos del contacto"
-                   BackgroundColor="WhiteSmoke"
-                   HorizontalOptions="CenterAndExpand" />
+                   HorizontalOptions="CenterAndExpand"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="Black"/>
             <Label x:Name="lblMensaje"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
             <Entry x:Name="txtNombre"
                    Placeholder="Nombre"/>
             <Entry x:Name="txtApellidos"
@@ -31,9 +36,13 @@
             <Entry x:Name="txtTelefono"
                    Placeholder="Telefono"/>
             <Button Text="Actualizar"
-                    x:Name="btn_actualizar"/>
+                    x:Name="btn_actualizar"
+                BackgroundColor="#09C68A"/>
             <Button Text="Eliminar"
-                    x:Name="btn_eliminar"/>
+                    x:Name="btn_eliminar"
+                BackgroundColor="#09C68A"/>
         </StackLayout>
-    </ContentPage.Content>
+
+       
+    </StackLayout>
 </ContentPage>

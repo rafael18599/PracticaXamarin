@@ -4,32 +4,38 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="DemoProyectoCrud.Vistas.V_Consulta">
-    <ContentPage.Content>
-        <StackLayout BackgroundColor="White"
-                     Margin="5">
-            
-            <StackLayout.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <LinearGradientBrush.GradientStops>
-                        <GradientStop Offset="0" Color="white" />
-                        <GradientStop Offset="1" Color="CadetBlue" />
-                    </LinearGradientBrush.GradientStops>
-                </LinearGradientBrush>
-            </StackLayout.Background>
-            
+             x:Class="DemoProyectoCrud.Vistas.V_Consulta"
+             Title="Lista de Contactos en la Agenda">
+    
+    <StackLayout>
+
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="white" />
+                    <GradientStop Offset="1" Color="CadetBlue" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+        
+        <StackLayout Margin="5" VerticalOptions="Center" TranslationY="100">
             <Label Text="Lista de contactos"
-                   HorizontalOptions="Center"
-                   BackgroundColor="WhiteSmoke"/>
-            
-            <ListView x:Name="ListaContactos">
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,50"/>
+
+            <ListView x:Name="ListaContactos" >
                 <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Nombre}" Detail="{Binding Apellidos}"></TextCell>
+                    <DataTemplate >
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Apellidos}" TextColor="Black"></TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
+                       
         </StackLayout>
-    </ContentPage.Content>
+
+    </StackLayout>
+    
 </ContentPage>
