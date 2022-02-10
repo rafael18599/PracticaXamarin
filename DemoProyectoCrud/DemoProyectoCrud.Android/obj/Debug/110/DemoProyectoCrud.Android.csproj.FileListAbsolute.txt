@@ -582,3 +582,5 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\DemoProyectoCrud\DemoProyectoCrud\DemoP
 C:\Users\sistemas03\Desktop\Demo Xamarin\DemoProyectoCrud\DemoProyectoCrud\DemoProyectoCrud.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\sistemas03\Desktop\Demo Xamarin\DemoProyectoCrud\DemoProyectoCrud\DemoProyectoCrud.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\sistemas03\Desktop\Demo Xamarin\DemoProyectoCrud\DemoProyectoCrud\DemoProyectoCrud.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\sistemas03\Desktop\Demo Xamarin\DemoProyectoCrud\DemoProyectoCrud\DemoProyectoCrud.Android\obj\Debug\110\res\drawable\apple.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\DemoProyectoCrud\DemoProyectoCrud\DemoProyectoCrud.Android\obj\Debug\110\res\drawable\android.png

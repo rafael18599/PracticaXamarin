@@ -23,6 +23,8 @@ namespace DemoProyectoCrud.Vistas
             conexion = DependencyService.Get<ISQLiteDB>().GetConnection();
             btnBuscar.Clicked += BtnBuscar_Clicked;
             btnRegistrar.Clicked += BtnRegistrar_Clicked;
+            btnInformacion.Clicked += BtnInformacion_Clicked;
+            btnLista.Clicked += BtnLista_Clicked;
         }
 
         private void BtnRegistrar_Clicked(object sender, EventArgs e)
@@ -52,6 +54,17 @@ namespace DemoProyectoCrud.Vistas
             {
                 throw;
             }
+        }
+
+        private void BtnInformacion_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Información", "Haga clic en 'Buscar' para saber si existe el nombre que ha insertado o haga clic en 'Registrar' para inscribir a un nuevo usuario en la agenda. ", "OK");
+
+        }
+
+        private void BtnLista_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new V_Consulta());
         }
 
         private IEnumerable<T_Contacto> SELECT_WHERE(SQLiteConnection db, string nombre)

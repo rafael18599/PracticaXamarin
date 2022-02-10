@@ -136,4 +136,10 @@
       <Name>DemoProyectoCrud</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\android.png" />
+  </ItemGroup>
 </Project>

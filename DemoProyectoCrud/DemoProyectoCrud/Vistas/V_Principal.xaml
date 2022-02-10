@@ -6,7 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="INICIO - AGENDA">
-    <StackLayout BackgroundColor="White">
+    <StackLayout >
         <StackLayout.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                 <LinearGradientBrush.GradientStops>
@@ -39,7 +39,7 @@
                    MaxLength="15">
             </Entry>
 
-            <Grid>
+            <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
@@ -66,9 +66,46 @@
                     BackgroundColor="#09C68A"
                     >
                 </Button>
-                
+
             </Grid>
+            <StackLayout >
+                <Button
+                x:Name="btnLista"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Text="Lista de Contactos"
+                BackgroundColor="#09C68A">
+                </Button>
+            </StackLayout>
+            
+
+            
+            <Grid TranslationY="200">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image
+                Source="android.png"
+                Grid.Row="0" Grid.Column="0"    >
+                </Image>
+                <Image
+                Source="apple.png"
+                Grid.Row="0" Grid.Column="1">
+                </Image>
+            </Grid>
+            <Button
+                x:Name="btnInformacion"
+                VerticalOptions="Fill"
+                HorizontalOptions="Center"
+                Text="Información de la App"
+                BackgroundColor="#09C68A"
+                TranslationY="0">
+            </Button>
         </StackLayout>
-       
     </StackLayout>
 </ContentPage>
